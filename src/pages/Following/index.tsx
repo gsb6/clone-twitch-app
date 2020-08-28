@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { FlatList, View } from 'react-native';
 
 import CategoryList from '../../components/CategoryList';
+import ChannelList from '../../components/ChannelList';
 import Header from '../../components/Header';
 import Heading from '../../components/Heading';
 import StreamList from '../../components/StreamList';
@@ -46,7 +47,7 @@ const Following: React.FC = () => {
       },
       {
         key: 'C3',
-        render: () => <View />,
+        render: () => <ChannelList />,
       },
       {
         key: 'OFFLINE_CHANNELS',
